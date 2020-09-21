@@ -27,7 +27,7 @@ app.get("/api/hello", function (req, res) {
 app.get("/api/whoami", (req, res) => {
   res.json({
     "ipaddress": req.ip,
-    "language": "vn",
+    "language": req.language,
     "software": "init"
   })
 })
